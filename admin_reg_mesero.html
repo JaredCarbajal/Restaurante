@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/lovelo?styles=25962" rel="stylesheet">
+
+
+    <title>Registro</title>
+
+</head>
+
+<body>
+
+    <div class="admin_log_html">
+
+    </div>
+
+    <div class="home">
+        <div class="home2_admin_log">
+            <div class="title_admin_log">
+                <div class="title_center_admin">
+                    <h1>BIENVENIDO <br> INGRESA TUS DATOS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-container">
+        <div class="cliente_log">
+            <div class="cliente_log_form">
+                <form id="alta_cliente">
+                    <div class="form-group">
+                        <label>Nombre Completo:</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo:</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Número Telefónico</label>
+                        <input type="tel" name="tel">
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre de usuario:</label>
+                        <input type="text" name="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña:</label>
+                        <input type="password" name="contraseña" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="cliente_reg_button">
+        <div class="cliente_reg_button2">
+            <img src="img/flecha.png" alt="">
+            <br>
+            <a href="cliente_reg.html">
+                <input type="submit" value="Crear Cuenta" onclick="enviarDatos()">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function enviarDatos() {
+        const data = new FormData(document.getElementById('alta_cliente'));
+        var url = 'alta_cliente.php';
+        fetch(url, {
+            method: 'POST',
+            body: data
+        }).then(res => res.text())
+            .catch(error => console.error('Error:', error))
+            .then(response => {
+                console.log('Success:', response);
+                document.getElementById("div1").innerText = response;
+            });
+    }
+</script>
+
+</html>

@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.cdnfonts.com/css/lovelo?styles=25962" rel="stylesheet">
+  <link rel="icon" href="img/logom.png">
+
+  <title>Menu</title>
+
+</head>
+
+<div class="menu_html">
+
+</div>
+
+<body>
+  <ul class="barra_opciones">
+    <li class="right active"><a href="menu.html">ALIMENTOS</a></li>
+    <li class="right"><a href="promociones.html">PROMOCIONES</a></li>
+    <li class="right"><a href="combos.html">COMBOS</a></li>
+    <li><a href="ordenar.html">CUENTA</a></li>
+  </ul>
+
+  <div class="titulo_menu">
+    <h1>D E S A Y U N O S</h1>
+  </div>
+
+  <div class="image-container" id="alimentos">
+    <div class="image-item">
+    </div>
+
+    <div class="image-item">
+
+    </div>
+    <div class="image-item">
+
+    </div>
+    <div class="image-item">
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+<script>
+  fetch('mostrar_alimentos.php')
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      productos = data;
+      let content = "";
+      productos.forEach(element => {
+        content += "<div class='image-container'>";
+        content += "<div class='image-item'>";
+
+        content += "<p>" + element.nombre + "</p>";
+        content += "<img src='" + element.img + "' alt='" + element.nombre + "'>";
+
+        content += "<div class='price-below'>";
+        content += "<p>$ " + element.precio + "</p>";
+        content += "</div>";
+
+        content += "</div>";
+        content += "</div>";
+      });
+      document.getElementById("alimentos").innerHTML = content;
+    });
+</script>
+
+</html>

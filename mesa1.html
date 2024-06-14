@@ -1,0 +1,624 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.cdnfonts.com/css/lovelo?styles=25962" rel="stylesheet">
+
+  <link rel="icon" href="img/logom.png">
+
+  <title>Mesa1</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+  <div id="searchResults">
+  </div>
+  <div class="img_box">
+    <div class="mesa1_html">
+    </div>
+    <div class="datos">
+      <div class="datos2">
+        <p>Orden: #1</p>
+        <p>Fecha:</p>
+        <p id="current_date"></p>
+        <p>Mesero: Naza</p>
+
+      </div>
+    </div>
+  </div>
+
+  <ul class="barra_opciones">
+    <li class="right"><a href="#alimentos">ALIMENTOS</a></li>
+    <li class="right"><a href="#bebidas">BEBIDAS</a></li>
+    <li class="right"><a href="#combos">COMBOS</a></li>
+    <li><a href="#cuenta">CUENTA</a></li>
+  </ul>
+
+  <div class="mesa1">
+    <div class="mesa1_left">
+      <div class="ordenar_container" id="listaArticulos">
+        <!--_______________________D E S A Y U N O S_______________________________________-->
+
+        <div class="item ordenar_cube articulo" id="alimentos">
+          <div class="cube_left">
+            <img class="item-image" src="img/waffles.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Waffles</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 60</p>
+              </div>
+              <span>*Añade tus toppings</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/sandwicheuro.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Sandwich Europeo</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 50</p>
+              </div>
+              <span>*Incluye Café</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/piedefrutas.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Pie De Frutas</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 70</p>
+              </div>
+              <span>*Para 3 Personas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/huvotocino.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Huevos Con Tocino</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 35</p>
+              </div>
+              <span>*Incluye Pan Tostado</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+        <!--_______________________D E S A Y U N O S______________________________________-->
+        <!--_______________________A L M U E R Z O S______________________________________-->
+
+        <div class="item ordenar_cube articulo" id="">
+          <div class="cube_left">
+            <img class="item-image" src="img/tacosalpastor.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Tacos Al Pastor</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 90</p>
+              </div>
+              <span>*Tortilla Blanca o Amarilla</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/hamburguesas.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Hamburguesa</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 80</p>
+              </div>
+              <span>*Incluye Orden De Papas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/camarones.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Camarones</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 100</p>
+              </div>
+              <span>*Incluye Caldo</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/flautas.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Flautas</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 60</p>
+              </div>
+              <span>*De Papa o Carne</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+        <!--_______________________A L M U E R Z O S______________________________________-->
+        <!--_______________________C E N A S______________________________________-->
+
+        <div class="item ordenar_cube articulo" id="">
+          <div class="cube_left">
+            <img class="item-image" src="img/pastellimon.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Pastel De Limón</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 45</p>
+              </div>
+              <span>*Incluye Café</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/suizas.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Enchiladas Suizas</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 80</p>
+              </div>
+              <span>*Incluye Café/Té</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/caldo.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Caldo Tlalpeño</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 100</p>
+              </div>
+              <span>*Incluye Tostadas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/brownie.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Brownie</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 60</p>
+              </div>
+              <span></span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+        <!--_______________________C E N A S______________________________________-->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--_______________________B E B I D A S______________________________________-->
+        <div class="item ordenar_cube articulo" id="bebidas">
+          <div class="cube_left">
+            <img class="item-image" src="img/tehelado.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Té Helado</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 30</p>
+              </div>
+              <span>*Se prepara en base a chufas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/horchata.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Horchata</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 25</p>
+              </div>
+              <span>*Incluye orden de papas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/piñacolada.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Piña Colada</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 40</p>
+              </div>
+              <span>*Imprescindible en el verano</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/naranjada.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Naranjada</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 25</p>
+              </div>
+              <span>*Refresca Y Calma La Sed</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+        <!--_______________________B E B I D A S______________________________________-->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--_______________________C O M B OS______________________________________-->
+        <div class="item ordenar_cube articulo" id="combos">
+          <div class="cube_left">
+            <img class="item-image" src="img/sushicombo.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Sushi (Combo)</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 430</p>
+              </div>
+              <span>*Para 4 Personas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/carnecombo.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Carne Asada (Combo)</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$ 225</p>
+              </div>
+              <span>*Incluye Cebolla Asada</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/hamburguesas.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Hamburguesas</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$440</p>
+              </div>
+              <span>*5 Hamburguesas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item ordenar_cube articulo">
+          <div class="cube_left">
+            <img class="item-image" src="img/pollocombo.jpg" alt="">
+          </div>
+          <div class="cube_right ">
+            <p class="item-title">Pollo Asado</p>
+            <div class="item-details">
+              <div class="cube_right_p">
+                <p class="item-price">$225</p>
+              </div>
+              <span>*1 Pollo/Torillas</span>
+              <div class="cube_button">
+                <Button>-</Button>
+                <p>0</p>
+                <Button>+</Button>
+              </div>
+              <Button class="addToCart">Seleccionar</Button>
+            </div>
+          </div>
+        </div>
+        <!--_______________________C O M B OS______________________________________-->
+
+
+      </div>
+
+      <br><br><br><br><br><br>
+
+      <div class="titulo_menu">
+        <h1 style="color: #902424;">CONFIRMA TU ORDEN</h1>
+      </div>
+
+      <div class="titulos">
+        <p>#11</p>
+        <p>MESA 1</p>
+        <p>12/03/2023</p>
+        <p>05:42 pm</p>
+      </div>
+
+      <div class="table_">
+        <div class="tabla_total">
+          <table>
+            <tr>
+              <th>Cantidad</th>
+              <th class="fila">Producto</th>
+            </tr>
+            <!--
+            <tr>
+              <td>Fila 1, Celda 1</td>
+              <td class="fila">Fila 1, Celda 2</td>
+            </tr>
+            -->
+          </table>
+        </div>
+      </div>
+
+      <section class="mesa_1" id="cuenta">
+        <div class="">
+
+          <div class="shoppingCartItemsContainer">
+          </div>
+
+          <div class="start_total">
+            <div class="">
+              <div class="">
+                <br><br><br><br>
+                <p class="">Total</p>
+                <p class="shoppingCartTotal">$ 0.00</p>
+
+                <div class="cliente_reg_button2">
+                  <div class="cliente_reg_button22">
+                    <img src="img/flecha.png" alt="">
+                    <br>
+                      <input class="comprarButton boton_comprar" type="submit" value="Enviar a Cocina" data-toggle="modal"
+                      data-target="#comprarModal">
+                  </div>
+                </div>
+                <!--
+                <button class="comprarButton boton_comprar" type="button" data-toggle="modal"
+                  data-target="#comprarModal">Enviar a Cocina</button>
+              -->
+              </div>
+            </div>
+          </div>
+
+
+        
+
+
+          <div class="modal" id="comprarModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <p>¡Enviado!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="mesa1_right">
+      <div class="mesa22">
+        <input type="search" name="buscador" id="buscador" placeholder="B U S C A R">
+        <img src="img/search.png" alt="Buscar">
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+<script>
+  date = new Date();
+  year = date.getFullYear();
+  month = date.getMonth() + 1;
+  day = date.getDate();
+  document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+</script>
+
+<script>
+  function buscar() {
+    // Lógica de búsqueda aquí
+  }
+</script>
+
+<script src="buscar.js">
+
+</script>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="tienda.js"></script>
+<script src="file.js"></script>
+<script src="script.js"></script>
+
+
+</html>

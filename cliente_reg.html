@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.cdnfonts.com/css/lovelo?styles=25962" rel="stylesheet">
+
+  <link rel="icon" href="img/logom.png">
+
+  <title>Registro</title>
+
+</head>
+
+<div class="cliente_reg_html">
+</div>
+
+<body>
+  <div class="home">
+    <div class="home2_admin_log">
+      <div class="title_admin_log">
+        <div class="title_center_admin">
+          <h1>BIENVENIDO <br> INGRESA TUS DATOS</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-container">
+    <div class="cliente_log">
+      <div class="cliente_log_form">
+        <form action="registrar_cliente.php" method="post">
+          <div class="form-group">
+            <label>Nombre Completo:</label>
+            <input type="text" id="usuario" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label>Correo:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              title="Ingrese un correo válido">
+          </div>
+          <div class="form-group">
+            <label>Número Telefónico</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]+" title="Ingrese solo números">
+          </div>
+          <div class="form-group">
+            <label>Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+          </div>
+          <div class="form-group">
+            <label>Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario">
+          </div>
+          <div class="form-group">
+            <label>Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cliente_reg_button">
+    <div class="cliente_reg_button2">
+      <img src="img/flecha.png" alt="">
+      <br>
+      <a href="cliente_reg2.html">
+        <input type="submit" value="Registrarse">
+      </a>
+    </div>
+  </div>
+  </div>
+  </form>
+
+</body>
+
+</html>
