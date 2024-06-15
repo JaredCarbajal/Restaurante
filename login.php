@@ -8,40 +8,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["usuario"];
     $password = $_POST["contrasena"];
 
-    // Conecta a la base de datos
-    //$servername = "localhost:3306";
-    // $dbusername = "Malabar_user";
-    //$dbpassword = "Malabar1234#";
-    //$dbname = "id20704670_malabar2";
-    $conn = mysqli_connect("localhost", "root", "Melanie516*", "id20704670_malabar2");
+    try {
+        // Conecta a la base de datos usando PDO
+        $conexion = new PDO("mysql:host=boed0eaafkqbsadaavot-mysql.services.clever-cloud.com;dbname=boed0eaafkqbsadaavot;charset=utf8", "usgen2uz8lwzcx3h", "LCIrtssYqK1M2RakS0xc");
+        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Establece el modo de errores
 
-    // Verifica si la conexión se ha realizado correctamente
-    if (!$conn) {
-        die("Error de conexión: " . mysqli_connect_error());
-    }
+        // Verifica las credenciales del usuario en la base de datos
+        $sql = "SELECT * FROM administrador WHERE Usuario=:username AND Contraseña=:password";
+        $query = $conexion->prepare($sql);
+        $query->bindParam(':username', $username, PDO::PARAM_STR);
+        $query->bindParam(':password', $password, PDO::PARAM_STR);
+        $query->execute();
 
-    // Verifica las credenciales del usuario en la base de datos
-    $sql = "SELECT * FROM administrador WHERE Usuario='$username' AND Contraseña='$password'";
-    $result = mysqli_query($conn, $sql);
-
-    // Si se encuentra una coincidencia, inicia la sesión de usuario
-    if (mysqli_num_rows($result) == 1) {
-        $_SESSION["loggedin"] = true;
-        $_SESSION["username"] = $username;
-        header("location: admin_menu.html"); // Redirecciona al usuario a la página de inicio
-
-
-
-
-        echo '<div id="mensaje-error">Usuario o contraseña incorrectos.</div>';
-
-    } else {
-        header("Location: error_contra.html");
+        // Si se encuentra una coincidencia, inicia la sesión de usuario
+        if ($query->rowCount() == 1) {
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $username;
+            header("location: admin_menu.html"); // Redirecciona al usuario a la página de inicio
+            exit();
+        } else {
+            header("Location: error_contra.html");
+            exit();
+        }
+    } catch (PDOException $e) {
+        echo "Falla al obtener un manejador de BD: " . $e->getMessage();
         exit();
     }
 
-
-    // Cierra la conexión a la base de datos
-    mysqli_close($conn);
+    // Cierra la conexión a la base de datos (aunque no es necesario en PDO)
+    $conexion = null; // Esto no es necesario en PDO, pero es buena práctica
 }
 ?>
