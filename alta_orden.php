@@ -1,6 +1,8 @@
 <?php
 // Archivo: guardar_datos.php
-
+header("Access-Control-Allow-Origin:*");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type,Accept");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 // Obtener los datos enviados desde el cliente
 $comida = $_POST['comida'];
 $cantidad = $_POST['cantidad'];

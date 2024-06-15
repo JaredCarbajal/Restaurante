@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin:*");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type,Accept");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 // Conexión a la base de datos en Clever Cloud
 $clever_cloud_host = "boed0eaafkqbsadaavot-mysql.services.clever-cloud.com";
 $clever_cloud_username = "usgen2uz8lwzcx3h";

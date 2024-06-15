@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin:*");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type,Accept");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 try {
     // Establecer la conexión PDO a la base de datos en Clever Cloud
     $conexion = new PDO("mysql:host=boed0eaafkqbsadaavot-mysql.services.clever-cloud.com;dbname=boed0eaafkqbsadaavot;charset=utf8", "usgen2uz8lwzcx3h", "LCIrtssYqK1M2RakS0xc");
