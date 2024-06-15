@@ -8,7 +8,7 @@ body {
 }
 
 .home_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/banner2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/banner2.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -18,7 +18,7 @@ body {
 }
 
 .cliente_log_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/cliente_log.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/cliente_log.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -28,7 +28,7 @@ body {
 }
 
 .cliente_reg_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/cliente_reg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/cliente_reg.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -38,7 +38,7 @@ body {
 }
 
 .menu_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/menu.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/menu.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -48,7 +48,7 @@ body {
 }
 
 .ordenar_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/ordenar.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/ordenar.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -58,7 +58,7 @@ body {
 }
 
 .admin_log_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/admin_log.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/admin_log.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -68,7 +68,7 @@ body {
 }
 
 .admin_menu_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/admin_log.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/admin_log.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -78,7 +78,7 @@ body {
 }
 
 .proveedores_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/proveedores.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/proveedores.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -88,7 +88,7 @@ body {
 }
 
 .facturacion_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/facturacion.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/facturacion.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -98,7 +98,7 @@ body {
 }
 
 .mesero_log_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/mesero_log.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/mesero_log.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -108,7 +108,7 @@ body {
 }
 
 .mesa_menu_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/menu.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/menu.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -118,7 +118,7 @@ body {
 }
 
 .mesa_total_html {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../webpage/img/mesa1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/mesa1.png");
     background-position: center;
     background-size: cover;
     width: 100%;
